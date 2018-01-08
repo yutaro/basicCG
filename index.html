@@ -14,10 +14,14 @@
             #app {
                 margin : 0 auto;
             }
+
+            [v-cloak]{
+                visibility : hidden;
+            }
         </style>
     </head>
     <body>
-        <div class="container" id="vue">
+        <div class="container" id="vue" v-cloak>
             <h1>三角錐のフラクラル</h1>
             <p>resurciveがlimitの回数まではクリックすると三角錐が増えます。</p>
             <p>sepの数下側に三角錐が増えます。</p>
