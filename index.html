@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>basicCG</title>
+        <style type="text/css">
+            .container{
+                margin : 0 auto;
+                max-width : 800px;
+            }
+            #app {
+                margin : 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="vue">
+            <label>limit</label>
+            <input type="number" v-model="limit">
+            <br>
+            <label>sep</label>
+            <input type="number" v-model="sep">
+            <p>recursive : {{ count }}</p>
+            <p>cones : {{ coneCount}}</p>
+            <div id="app"></div>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
