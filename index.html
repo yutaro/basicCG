@@ -2,11 +2,17 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>basicCG</title>
+        <title>recursive cones</title>
         <style type="text/css">
+            body {
+                background-color : rgb(226, 248, 245);
+            }
             .container{
                 margin : 0 auto;
                 max-width : 800px;
+                padding : 20px;
+                background-color :  rgb(251, 249, 221);
+                color : rgb(90, 124, 126);
             }
             #app {
                 margin : 0 auto;
@@ -15,6 +21,11 @@
     </head>
     <body>
         <div class="container" id="vue">
+            <h1>三角錐のフラクラル</h1>
+            <p>resurciveがlimitの回数まではクリックすると三角錐が増えます。</p>
+            <p>sepの数下側に三角錐が増えます。</p>
+            <p>conesの数が10000を越えると重くなって固まります。</p>
+            <p></p>
             <label>limit</label>
             <input type="number" v-model="limit">
             <br>
@@ -23,7 +34,10 @@
             <p>recursive : {{ count }}</p>
             <p>cones : {{ coneCount}}</p>
             <div id="app"></div>
-            
+
+            <p>参考にしたページ（フラクタル立方体版）: <a href="https://infosmith.biz/blog/it/p5js-webgl-3dfractal">p5.jsのWebGLモードでなんとなく3Dフラクタル</a></p>
+            <p>キャンバス : <a href="https://p5js.org/">p5.js</a></p>
+            <p>数値同期 : <a href="https://jp.vuejs.org/index.html">vue.js</a></p>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
         <script src="https://unpkg.com/vue"></script>

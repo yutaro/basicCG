@@ -28,7 +28,7 @@ function setup() {
  
 function mousePressed() {
     ++recursiveCount;
-    if (recursiveCount >= vm.limit) {
+    if (recursiveCount > vm.limit) {
         resetCone();
         vm.sep++;
         return;
